@@ -3,14 +3,6 @@
 import './App.css';
 
 function Header(){
-
-  const stylefontsize={
-    fontSize : "25px"
-  }
-  const stylefontweight={
-    fontWeight : "Bold"
-  }
-
   return (
     <>
       <div id="header">
@@ -20,8 +12,8 @@ function Header(){
                       NEW!
                   </div>
               </div>
-              <div className="price" style={stylefontsize}>
-                  <span style={stylefontweight}>공짜</span>로 지금 시작하세요!
+              <div className="price" style={{fontSize : "25px"}}>
+                  <span style={{fontWeight : "Bold"}}>공짜</span>로 지금 시작하세요!
               </div>
               <div className="detail">
                   <a href="detail.html">자세히 알아보기</a>
@@ -74,12 +66,6 @@ function Line(){
 }
 
 function Sub1(){
-  const stylewidth={
-    width : "500"
-  }
-  const stylealt={
-    alt : ""
-  }
   return (
     <>
       <div id="sub1">
@@ -92,7 +78,7 @@ function Sub1(){
               </div>
           </div>
           <div className="sub1_img">
-              <img width={stylewidth} alt={stylealt} src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"></img>
+              <img width={{width : "500"}} alt={{alt : ""}} src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"></img>
           </div>
       </div>
     </>
@@ -100,17 +86,11 @@ function Sub1(){
 }
 
 function Sub2(){
-  const stylewidth={
-    width : "500"
-  }
-  const stylealt={
-    alt : ""
-  }
   return (
     <>
       <div id="sub2">
         <div className="sub2_img">
-            <img width={stylewidth} alt={stylealt} src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"></img>
+            <img width={{width : "500"}} alt={{alt : ""}} src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"></img>
         </div>
         <div className="sub2_content">
             <div className="sub2_content_1">
@@ -126,12 +106,6 @@ function Sub2(){
 }
 
 function Sub3(){
-  const stylewidth={
-    width : "500"
-  }
-  const stylealt={
-    alt : ""
-  }
   return (
     <>
       <div id="sub3">
@@ -144,7 +118,7 @@ function Sub3(){
               </div>
           </div>
           <div className="sub3_img">
-              <img width={stylewidth} alt={stylealt} src="https://occ-0-395-988.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABe3Dqef6rg30BxYraI75i97IeQjD0YxUuToAnSA23dl0XQFrjXaFTWIB0HHy4TH_s094NU-9IjLpE_96AvWpTZTAQOR_icyEYcsB.png?r=acf"></img>
+              <img width={{width : "500"}} alt={{alt : ""}} src="https://occ-0-395-988.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABe3Dqef6rg30BxYraI75i97IeQjD0YxUuToAnSA23dl0XQFrjXaFTWIB0HHy4TH_s094NU-9IjLpE_96AvWpTZTAQOR_icyEYcsB.png?r=acf"></img>
           </div>
       </div>
     </>
@@ -152,17 +126,11 @@ function Sub3(){
 }
 
 function Sub4(){
-  const stylewidth={
-    width : "500"
-  }
-  const stylealt={
-    alt : ""
-  }
   return (
     <>
       <div id="sub4">
         <div className="sub4_img">
-            <img width={stylewidth} alt={stylealt} src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"></img>
+            <img width={{width : "500"}} alt={{alt : ""}} src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"></img>
         </div>
         <div className="sub4_content">
             <div className="sub4_content_1">
@@ -227,48 +195,38 @@ function Qna(){
 }
 
 function Footer(){
-  const styleheight={
-    height : "30"
-  }
-  const stylewidth={
-    width : "30"
-  }
-  const stylecolspan={
-    colspan : "3",
-    width : "400"
-  }
   return (
     <>
       <div id="footer">
         <div id="footer_title">질문있는 사람? 문의전화 : 하지마셈</div>
         <table className="info">
-            <tr style={styleheight}>
-                <td style={stylewidth}>자주 묻는 질문</td>
-                <td style={stylewidth}>기프트카드 약관</td>
-                <td style={stylewidth}>고객 센터</td>
+            <tr style={{hegiht : "30px"}}>
+                <td style={{width : "300"}}>자주 묻는 질문</td>
+                <td style={{width : "300"}}>기프트카드 약관</td>
+                <td style={{width : "300"}}>고객 센터</td>
             </tr>
-            <tr style={styleheight}>
-                <td style={stylewidth}>계정</td>
-                <td style={stylewidth}>미디어 센터</td>
-                <td style={stylewidth}>투자 정보(IR)</td>
+            <tr style={{hegiht : "30px"}}>
+                <td style={{width : "300"}}>계정</td>
+                <td style={{width : "300"}}>미디어 센터</td>
+                <td style={{width : "300"}}>투자 정보(IR)</td>
             </tr>
-            <tr style={styleheight}>
-                <td style={stylewidth}>입사 정보</td>
-                <td style={stylewidth}>넷플릭스 지원 디바이스</td>
-                <td style={stylewidth}>이용 약관</td>
+            <tr style={{hegiht : "30px"}}>
+                <td style={{width : "300"}}>입사 정보</td>
+                <td style={{width : "300"}}>넷플릭스 지원 디바이스</td>
+                <td style={{width : "300"}}>이용 약관</td>
             </tr>
-            <tr style={styleheight}>
-                <td style={stylewidth}>개인정보 처리방침</td>
-                <td style={stylewidth}>쿠키 설정</td>
-                <td style={stylewidth}>회사 정보</td>
+            <tr style={{hegiht : "30px"}}>
+                <td style={{width : "300"}}>개인정보 처리방침</td>
+                <td style={{width : "300"}}>쿠키 설정</td>
+                <td style={{width : "300"}}>회사 정보</td>
             </tr>
-            <tr style={styleheight}>
+            <tr style={{hegiht : "30px"}}>
                 <td width="300">문의하기</td>
                 <td width="300">속도 테스트</td>
                 <td width="300">법적 고지</td>
             </tr>
             <tr>
-                <td style={stylecolspan}>오직 넷플릭스에서</td>
+                <td style={{colspan : "3", width : "900"}}>오직 넷플릭스에서</td>
             </tr>
         </table>
         <div className="footer_lang">
