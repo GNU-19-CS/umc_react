@@ -1,6 +1,7 @@
 /*import logo from './logo.svg';*/
 
 import './App.css';
+import {Link} from "react-router-dom";
 
 function Header(){
   return (
@@ -16,7 +17,7 @@ function Header(){
                   <span style={{fontWeight : "Bold"}}>공짜</span>로 지금 시작하세요!
               </div>
               <div className="detail">
-                  <a href="detail.html">자세히 알아보기</a>
+                  자세히 알아보기
               </div>
           </div>
       </div>
@@ -39,7 +40,7 @@ function Main(){
                       <button class="lang_check">한국어</button>
                   </div>
                   <div className="sign_in">
-                      <a href="login.html"><button className="sign_in_text">로그인</button></a>
+                      <Link to="login"><button className="sign_in_text">로그인</button></Link>
                   </div>
               </div>
               <div id="main_content">
