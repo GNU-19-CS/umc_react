@@ -37,7 +37,7 @@
   }
 }
 
-@import "Reset.css";
+@import "another_page/Reset.css";
 
 /* 헤더 */
 #header{
