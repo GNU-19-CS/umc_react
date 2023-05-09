@@ -3,7 +3,26 @@
 import './App.css';
 import {Link} from "react-router-dom";
 
+import React, {useEffect, useState} from 'react';
+
 function Header(){
+
+  const [count, setCount] = useState("공짜");
+  useEffect(()=>{
+    console.log(count)
+  })
+
+  const Free=()=>{
+    if (count==="공짜"){
+      console.log()
+      setCount("Free");
+    }
+    else if(count==="Free"){
+      console.log(count)
+      setCount("공짜");
+    }
+  }
+
   return (
     <>
       <div id="header">
@@ -13,7 +32,7 @@ function Header(){
                       NEW!
                   </div>
               </div>
-              <div className="price" style={{fontSize : "25px"}}>
+              <div className="price" style={{fontSize : "25px"}} onClick={Free}>
                   <span style={{fontWeight : "Bold"}}>공짜</span>로 지금 시작하세요!
               </div>
               <div className="detail">
