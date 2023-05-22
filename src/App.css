@@ -64,10 +64,6 @@
           align-items:center;
           justify-content:center;
       }
-          .red_text{
-              color:white;
-              font-size:12px;
-          }
   .price{
       position:absolute;
       transform:translate(-50%,-50%);

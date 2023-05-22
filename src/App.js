@@ -5,6 +5,9 @@ import {Link} from "react-router-dom";
 
 import React, {useEffect, useState} from 'react';
 
+import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
+
 function Header(){
 
   const [count, setCount] = useState("공짜");
@@ -23,14 +26,17 @@ function Header(){
     }
   }
 
+  const Red_text = styled.div`
+    color : white;
+    font-size : 12px;
+  `;
+
   return (
     <>
       <div id="header">
           <div id="header_content">
               <div className="new_red" onclick="changeBg()">
-                  <div className="red_text">
-                      NEW!
-                  </div>
+                  <Red_text>New!</Red_text>
               </div>
               <div className="price" style={{fontSize : "25px"}} onClick={Free}>
                   <span style={{fontWeight : "Bold"}}>공짜</span>로 지금 시작하세요!
@@ -45,6 +51,17 @@ function Header(){
 }
 
 function Main(){
+  const Pc = useMediaQuery({
+    query:"(min-width : 1024px)"
+  });
+
+  const Tablet = useMediaQuery({
+    query:"(min-width : 768px) and (max-width : 1023px)"
+  });
+
+  const Mobile = useMediaQuery({
+    query:"(max-width : 767px)"
+  });
   return(
     <>
       <div id="main">
@@ -68,7 +85,9 @@ function Main(){
                   <div className="main_content_2">시청할 준비가 되셨나요? 멤버쉽 등록은 개나줘버려요!</div>
                   <div>
                       <form className="input_box">
-                          <input className="input" type="email" placeholder="이메일 주소"></input>
+                        {Pc && <input className="input" type="email" placeholder="PC"></input>}
+                        {Tablet && <input className="input" type="email" placeholder="Tablet"></input>}
+                        {Mobile && <input className="input" type="email" placeholder="Mobile"></input>}
                           <input className="submit" type="submit" value="시작하기 >"></input>
                       </form>
                   </div>
