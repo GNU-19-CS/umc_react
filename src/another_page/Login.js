@@ -2,6 +2,9 @@ import React from 'react';
 import './Login.css';
 
 function Login(){
+    const REST_API_KEY = "99f9feab00aea76b9f8da39c1b5bd3dc";
+    const REDIRECT_URI = "http://localhost:3000/login"
+    const KAKAO_AUTH_URL=`https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
     return(
         <>
         <div id="main">
@@ -23,7 +26,7 @@ function Login(){
                 <input type="password" placeholder="비밀번호" id="password_button"></input>
             </div>
             <div id="login">
-                <button type="submit" id="login_button">로그인</button>
+                <a href={KAKAO_AUTH_URL}><button type="submit" id="login_button">로그인</button></a>
             </div>
             <div id="frame_container">
                 Netflix 회원이 아닌가요?<br></br><br></br>
